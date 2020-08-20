@@ -1,4 +1,4 @@
-![](/images/world.jpg?raw=false)
+<!--![](/images/.jpg?raw=false)-->
 
 # Robot Driven by Visual Input
 
@@ -7,7 +7,7 @@
 
 With the help of Gazebo, a differential robot is created with a laser range finder sensor and a RGB camera. The setup is created in the Unified Robot Description Format **URDF**. After linking the robot parts together and defining joints for each wheel, the sensors with their respective physical capabilities are added to the robots definition. With the ROS framework, all the actors and sensors can be controlled.
 
-![](/images/PickupDropoff.gif)
+![](short.gif)
 ---
 
 ## Table of Contents
@@ -58,3 +58,4 @@ Inside the *ball_chaser* package the drive bot node is created, providing a serv
 The second required node inside the *ball_chaser* package is the process image node. This client node will subscribe to the robot’s camera images and analyze them to determine the position of the optical colour key, a white ball. Once the ball position is determined, the client node requests a service from the drive_bot server node to drive the robot toward the ball. The robot can drive either left, right or forward, depending on the robot position inside the image.
 
 ---
+![](long.gif)
